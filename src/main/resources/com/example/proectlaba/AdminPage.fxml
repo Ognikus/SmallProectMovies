@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1160.0" style="-fx-background-color: #01161e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proectlaba.AdminPage">
+   <children>
+      <Pane prefHeight="130.0" prefWidth="1000.0" style="-fx-border-color: white; -fx-border-radius: 0 0 20 20;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="955.0" layoutY="55.0" text="Привет!" textFill="#eff6e0">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserNameLabel" layoutX="1028.0" layoutY="55.0" text="user" textFill="#eff6e0">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="1106.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/user-interface.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button fx:id="StartPageBTN" layoutX="241.0" layoutY="42.0" mnemonicParsing="false" style="-fx-border-color: #eff6e0; -fx-background-color: #00000000; -fx-border-radius: 20;" text="Главная">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6840000152587891" green="0.7599999904632568" blue="0.6903333067893982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.16778523489932887">
+                           <color>
+                              <Color red="0.1387670636177063" green="0.37399083375930786" blue="0.8815789222717285" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.29530201342281853">
+                           <color>
+                              <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5058315599934522">
+                           <color>
+                              <Color red="0.14079999923706055" green="0.3871999979019165" blue="0.8799999952316284" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7114093959731543">
+                           <color>
+                              <Color red="0.6840000152587891" green="0.7599999904632568" blue="0.6903333067893982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8692298248485841">
+                           <color>
+                              <Color red="0.13920000195503235" green="0.38280001282691956" blue="0.8700000047683716" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="122.0" fitWidth="217.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/regnum_picture_1488194413105782_normal.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="AddPageBTN" layoutX="369.0" layoutY="42.0" mnemonicParsing="false" style="-fx-border-color: #eff6e0; -fx-background-color: #00000000; -fx-border-radius: 20;" text="Добавить">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6840000152587891" green="0.7599999904632568" blue="0.6903333067893982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.16778523489932887">
+                           <color>
+                              <Color red="0.1387670636177063" green="0.37399083375930786" blue="0.8815789222717285" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.29530201342281853">
+                           <color>
+                              <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5058315599934522">
+                           <color>
+                              <Color red="0.14079999923706055" green="0.3871999979019165" blue="0.8799999952316284" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7114093959731543">
+                           <color>
+                              <Color red="0.6840000152587891" green="0.7599999904632568" blue="0.6903333067893982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8692298248485841">
+                           <color>
+                              <Color red="0.13920000195503235" green="0.38280001282691956" blue="0.8700000047683716" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ExtBTN" layoutX="954.0" layoutY="88.0" mnemonicParsing="false" style="-fx-border-color: #eff6e0; -fx-background-color: #00000000; -fx-border-radius: 20;" text="Выйти">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6840000152587891" green="0.7599999904632568" blue="0.6903333067893982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.16778523489932887">
+                           <color>
+                              <Color red="0.1387670636177063" green="0.37399083375930786" blue="0.8815789222717285" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.29530201342281853">
+                           <color>
+                              <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5058315599934522">
+                           <color>
+                              <Color red="0.14079999923706055" green="0.3871999979019165" blue="0.8799999952316284" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7114093959731543">
+                           <color>
+                              <Color red="0.6840000152587891" green="0.7599999904632568" blue="0.6903333067893982" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8692298248485841">
+                           <color>
+                              <Color red="0.13920000195503235" green="0.38280001282691956" blue="0.8700000047683716" opacity="0.8199999928474426" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="StartPane" layoutX="2.0" layoutY="152.0" prefHeight="550.0" prefWidth="1160.0" style="-fx-border-color: white; -fx-border-radius: 20;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="152.0">
+         <children>
+            <ScrollPane layoutX="4.0" layoutY="14.0" prefHeight="523.0" prefWidth="1160.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="826.0" prefWidth="1145.0" style="-fx-background-color: #01161e;">
+                     <children>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OE4IU~2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="184.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OE4IU~3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="333.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OE4IU~4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="488.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OE4IU~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="651.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O4E11~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="815.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O198A~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="988.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O6462~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="24.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OFFAD~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="177.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OA95E~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="333.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OC8CB~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="488.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OFFCB~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="651.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O3A1C~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="815.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5ODBAA~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="988.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O191D~1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="503.0" layoutY="200.0" text="Вызов (2023)" textFill="#eff6e0">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="198.0" prefHeight="63.0" prefWidth="139.0" text="Подземелья и драконы: Честь среди воров (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="198.0" prefHeight="46.0" prefWidth="99.0" text="Джон Уик 4 (2023)" textAlignment="CENTER" textFill="#eff6e0" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="343.0" layoutY="203.0" prefHeight="63.0" prefWidth="119.0" text="Стражи Галактики. Часть 3 (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="992.0" layoutY="203.0" prefHeight="63.0" prefWidth="118.0" text="Сокровища партизанского леса (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="820.0" layoutY="200.0" prefHeight="64.0" prefWidth="117.0" text="Авангард. Возвращение (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="652.0" layoutY="200.0" prefHeight="64.0" prefWidth="123.0" text="Братья Супер Марио в кино (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="488.0" layoutY="473.0" prefHeight="46.0" prefWidth="119.0" text="За нас с вами (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="334.0" layoutY="473.0" prefHeight="46.0" prefWidth="118.0" text="Русский крест (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="175.0" layoutY="475.0" prefHeight="46.0" prefWidth="119.0" text="Air: Большой прыжок (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="475.0" prefHeight="46.0" prefWidth="124.0" text="Переводчик (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="988.0" layoutY="475.0" prefHeight="46.0" prefWidth="118.0" text="Все страхи Бо (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="809.0" layoutY="475.0" prefHeight="63.0" prefWidth="131.0" text="Три мушкетера: Д’Артаньян (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="655.0" layoutY="473.0" prefHeight="46.0" prefWidth="131.0" text="Пропавшая без вести (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="31.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O32D2~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="184.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O5A3C~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="340.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O179B~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="495.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OF12E~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="658.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O103F~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="822.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5OB691~1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="140.0" layoutX="995.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Assets/MoviesART/5O109C_1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="495.0" layoutY="739.0" prefHeight="63.0" prefWidth="119.0" text="Атомные энтузиасты (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="340.0" layoutY="741.0" prefHeight="64.0" prefWidth="131.0" text="Патхан: Схватка со смертью (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="182.0" layoutY="741.0" prefHeight="46.0" prefWidth="119.0" text="Кунг-фу жеребец (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="741.0" prefHeight="64.0" prefWidth="117.0" text="Гром: Трудное детство (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="995.0" layoutY="741.0" prefHeight="46.0" prefWidth="118.0" text="За гранью времени (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="822.0" layoutY="742.0" prefHeight="46.0" prefWidth="131.0" text="Юра дворник (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="656.0" layoutY="743.0" prefHeight="85.0" prefWidth="131.0" text="Истребитель демонов: Деревня кузнецов (2023)" textAlignment="CENTER" textFill="#eff6e0" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="1038.0" fill="WHITE" layoutX="110.0" layoutY="540.0" startX="-113.0" strokeWidth="4.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.07058823853731155" green="0.2705882489681244" blue="0.3490196168422699" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6543624161073825">
+                                       <color>
+                                          <Color red="0.3490196168422699" green="0.5137255191802979" blue="0.572549045085907" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Line>
+                        <Line endX="1038.0" fill="WHITE" layoutX="110.0" layoutY="275.0" startX="-113.0" strokeWidth="4.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.07058823853731155" green="0.2705882489681244" blue="0.3490196168422699" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6543624161073825">
+                                       <color>
+                                          <Color red="0.3490196168422699" green="0.5137255191802979" blue="0.572549045085907" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.6823529601097107" green="0.7647058963775635" blue="0.6901960968971252" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Line>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneAddMovies" layoutY="152.0" prefHeight="550.0" prefWidth="1160.0" style="-fx-border-color: white; -fx-border-radius: 20;" visible="false">
+         <children>
+            <TextField fx:id="NameMoviesField" layoutX="197.0" layoutY="94.0" style="-fx-border-color: #eff6e0; -fx-background-color: #598392; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="88.0" layoutY="97.0" text="Название" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="149.0" text="Год" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="203.0" text="Жанр" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="256.0" text="Рейтинг" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="YearMoviesField" layoutX="197.0" layoutY="146.0" style="-fx-border-color: eff6e0; -fx-background-color: #598392; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="JanrMoviesField" layoutX="196.0" layoutY="200.0" style="-fx-border-color: eff6e0; -fx-background-color: #598392; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="RatingMoviesField" layoutX="193.0" layoutY="253.0" style="-fx-border-color: eff6e0; -fx-background-color: #598392; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3;">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="MoviesAllTable" layoutX="457.0" layoutY="40.0" prefHeight="478.0" prefWidth="672.0">
+              <columns>
+                <TableColumn fx:id="MoviesIdColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="MoviesNameColumn" prefWidth="177.0" text="Название" />
+                  <TableColumn fx:id="MoviesYearColumn" prefWidth="91.0" text="Год" />
+                  <TableColumn fx:id="MoviesJanrColumn" prefWidth="227.0" text="Жанр" />
+                  <TableColumn fx:id="MoviesRatingColumn" prefWidth="101.0" text="Рейтинг" />
+              </columns>
+            </TableView>
+            <Button fx:id="AddMoviesBTN" layoutX="193.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #124559; -fx-border-color: #eff6e0; -fx-background-radius: 20; -fx-border-radius: 20;" text="Добавить" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="RedactMoviesBTN" layoutX="193.0" layoutY="372.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #124559; -fx-border-color: #eff6e0; -fx-background-radius: 20; -fx-border-radius: 20;" text="Редактировать" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="DeletMoviesBTN" layoutX="193.0" layoutY="424.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #124559; -fx-border-color: #eff6e0; -fx-background-radius: 20; -fx-border-radius: 20;" text="Удалить" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="150.0" layoutY="32.0" text="Управление фильмами" textFill="#eff6e0">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="IdFieldMovies" alignment="TOP_CENTER" disable="true" layoutX="400.0" layoutY="100.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-radius: 40;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

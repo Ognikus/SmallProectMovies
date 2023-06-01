@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #0d1b2a;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proectlaba.LoginController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Pane fx:id="LoginPane" layoutX="75.0" layoutY="148.0" prefHeight="337.0" prefWidth="271.0">
+               <children>
+                  <TextField fx:id="LoginFieldLog" layoutX="14.0" layoutY="67.0" prefHeight="43.0" prefWidth="247.0" promptText="Логин" style="-fx-border-color: #e0e1dd; -fx-background-color: #FFFFFF00; -fx-border-radius: 20;" />
+                  <PasswordField fx:id="PasswordFieldLog" layoutX="14.0" layoutY="137.0" prefHeight="43.0" prefWidth="247.0" promptText="Пароль" style="-fx-border-color: #e0e1dd; -fx-background-color: #FFFFFF00; -fx-border-radius: 20;" />
+                  <Label layoutX="69.0" layoutY="14.0" text="Авторизация" textFill="#eff6e0">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="LoginBTN" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="247.0" style="-fx-background-color: #598392; -fx-background-radius: 20;" text="Войти" textFill="#eff6e0">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="274.0" text="Нет аккаунта?" textFill="#eff6e0" />
+                  <Label fx:id="RegistrationBtnLabel" layoutX="97.0" layoutY="274.0" text="Зарегистрироваться" textFill="#eff6e0" underline="true">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="134.0" fitWidth="226.0" layoutX="143.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/login%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="48.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="48.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/lock%20(1).png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="RegistPane" layoutX="75.0" layoutY="148.0" prefHeight="337.0" prefWidth="271.0" visible="false">
+               <children>
+                  <TextField fx:id="LoginFiedlReg" layoutX="14.0" layoutY="67.0" prefHeight="43.0" prefWidth="247.0" promptText="Логин" style="-fx-border-color: #e0e1dd; -fx-background-color: #FFFFFF00; -fx-border-radius: 20;" />
+                  <PasswordField fx:id="PasswordFiedlReg" layoutX="14.0" layoutY="137.0" prefHeight="43.0" prefWidth="247.0" promptText="Пароль" style="-fx-border-color: #e0e1dd; -fx-background-color: #FFFFFF00; -fx-border-radius: 20;" />
+                  <Label layoutX="69.0" layoutY="14.0" text="Регистрация" textFill="#eff6e0">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="RegistrationBTN" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="247.0" style="-fx-background-color: #598392; -fx-background-radius: 20;" text="Зарегистрироваться" textFill="#eff6e0">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="274.0" text="Есть аккаунт?" textFill="#eff6e0" />
+                  <Label fx:id="LoginBtnLabel" layoutX="97.0" layoutY="274.0" text="Войти" textFill="#eff6e0" underline="true">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="500.0" fitWidth="450.0" layoutX="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Assets/guardians-of-the-galaxy-movie-2neon-lights-poster.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
